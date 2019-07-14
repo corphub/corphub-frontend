@@ -1,0 +1,10 @@
+{
+  getAllCategories {
+    id,
+    name,
+    entries {
+      id,
+      title
+    }
+  }
+}

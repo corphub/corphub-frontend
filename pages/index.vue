@@ -48,9 +48,28 @@
         </v-card-text>
       </v-card>
     </v-container>
+    <ul>
+      <li v-for="category in getAllCategories" :key="category.id">
+        <NuxtLink :to="`category/${category.id}`">
+          {{ category.name }}
+        </NuxtLink>
+      </li>
+    </ul>
   </v-content>
 </template>
 
 <script>
-export default {}
+import getAllCategories from '~/apollo/queries/allData'
+
+export default {
+  apollo: {
+    getAllCategories: {
+      prefetch: true,
+      query: getAllCategories
+    }
+  },
+  head: {
+    title: 'Cars with Apollo'
+  }
+}
 </script>

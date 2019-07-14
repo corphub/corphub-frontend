@@ -45,12 +45,17 @@ export default {
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
-    '@nuxtjs/pwa'
+    '@nuxtjs/proxy',
+    '@nuxtjs/pwa',
+    '@nuxtjs/apollo'
   ],
   /*
    ** Axios module configuration
    */
   axios: {
+    baseURL: 'http://localhost:8082/',
+    proxyHeaders: false,
+    credentials: false
     // See https://github.com/nuxt-community/axios-module#options
   },
 
@@ -77,6 +82,18 @@ export default {
           loader: 'eslint-loader',
           exclude: /(node_modules)/
         })
+      }
+    }
+  },
+
+  proxy: {
+    '/graphql': 'http://localhost:8082'
+  },
+
+  apollo: {
+    clientConfigs: {
+      default: {
+        httpEndpoint: 'http://localhost:8082/graphql'
       }
     }
   }
