@@ -8,38 +8,14 @@
         <v-card-text fluid>
           <v-container grid-list-md text-xs-center>
             <v-layout row wrap>
-              <v-flex xs4>
+              <v-flex
+                v-for="category in getAllCategories"
+                :key="category.id"
+                class="xs4"
+              >
                 <v-card fluid>
                   <v-card-title fluid>
-                    General
-                  </v-card-title>
-                </v-card>
-              </v-flex>
-              <v-flex xs4>
-                <v-card>
-                  <v-card-title>
-                    Development
-                  </v-card-title>
-                </v-card>
-              </v-flex>
-              <v-flex xs4>
-                <v-card>
-                  <v-card-title>
-                    Support
-                  </v-card-title>
-                </v-card>
-              </v-flex>
-              <v-flex xs4>
-                <v-card>
-                  <v-card-title>
-                    Product Management
-                  </v-card-title>
-                </v-card>
-              </v-flex>
-              <v-flex xs4>
-                <v-card>
-                  <v-card-title>
-                    ICT
+                    {{ category.name }}
                   </v-card-title>
                 </v-card>
               </v-flex>
@@ -48,13 +24,6 @@
         </v-card-text>
       </v-card>
     </v-container>
-    <ul>
-      <li v-for="category in getAllCategories" :key="category.id">
-        <NuxtLink :to="`category/${category.id}`">
-          {{ category.name }}
-        </NuxtLink>
-      </li>
-    </ul>
   </v-content>
 </template>
 
