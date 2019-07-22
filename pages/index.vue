@@ -6,6 +6,7 @@
           Welcome to TOPhub
         </v-card-title>
         <v-card-text fluid>
+          <search-widget></search-widget>
           <v-container grid-list-md text-xs-center>
             <v-layout row wrap>
               <v-flex
@@ -17,6 +18,12 @@
                   <v-card-title fluid>
                     {{ category.name }}
                   </v-card-title>
+                  <v-card-text>
+                    <img src="http://github.com/favicon.ico" />
+                    <ul>
+                      <li>test</li>
+                    </ul>
+                  </v-card-text>
                 </v-card>
               </v-flex>
             </v-layout>
@@ -28,9 +35,11 @@
 </template>
 
 <script>
+import SearchWidget from '../components/SearchWidget'
 import getAllCategories from '~/apollo/queries/allData'
 
 export default {
+  components: { SearchWidget },
   apollo: {
     getAllCategories: {
       prefetch: true,

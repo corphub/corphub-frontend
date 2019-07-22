@@ -37,7 +37,7 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: ['@/plugins/vuetify'],
+  plugins: ['@/plugins/vuetify', '@/plugins/reactivesearch-vue'],
 
   /*
    ** Nuxt.js modules
@@ -87,7 +87,8 @@ export default {
   },
 
   proxy: {
-    '/graphql': 'http://localhost:8082'
+    '/graphql': 'http://localhost:8082',
+    '/elasticsearch': { target: 'http://127.0.0.1:9200', changeOrigin: true }
   },
 
   apollo: {
