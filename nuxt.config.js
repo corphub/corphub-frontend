@@ -1,5 +1,7 @@
 import VuetifyLoaderPlugin from 'vuetify-loader/lib/plugin'
 import pkg from './package'
+import './plugins/dotenv-profile.js'
+require('dotenv').config()
 
 export default {
   mode: 'universal',
@@ -47,13 +49,14 @@ export default {
     '@nuxtjs/axios',
     '@nuxtjs/proxy',
     '@nuxtjs/pwa',
-    '@nuxtjs/apollo'
+    '@nuxtjs/apollo',
+    '@nuxtjs/dotenv'
   ],
   /*
    ** Axios module configuration
    */
   axios: {
-    baseURL: 'http://localhost:8082/',
+    baseURL: process.env.graphql_host,
     proxyHeaders: false,
     credentials: false
     // See https://github.com/nuxt-community/axios-module#options
@@ -87,14 +90,19 @@ export default {
   },
 
   proxy: {
-    '/graphql': 'http://localhost:8082',
-    '/elasticsearch': { target: 'http://127.0.0.1:9200', changeOrigin: true }
+    '/graphql': {
+      target: process.env.graphql_host
+    },
+    '/elasticsearch': {
+      target: process.env.elastic_search_host,
+      changeOrigin: true
+    }
   },
 
   apollo: {
     clientConfigs: {
       default: {
-        httpEndpoint: 'http://localhost:8082/graphql'
+        httpEndpoint: process.env.graphql_endpoint
       }
     }
   }
