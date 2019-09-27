@@ -4,19 +4,19 @@
     url="http://127.0.0.1:9200"
   >
     <DataSearch
-      componentId="SearchSensor"
-      iconPosition="right"
-      :dataField="['name', 'title', 'target']"
-      className="data-search"
-      :showClear="false"
+      component-id="SearchSensor"
+      icon-position="right"
+      :data-field="['name', 'title', 'target']"
+      class-name="data-search"
+      :show-clear="false"
       placeholder="Try me"
+      :render-suggestion="renderSuggestion"
       @valueSelected="logit"
-      :renderSuggestion="renderSuggestion"
     />
     <ReactiveList
-      componentId="SearchResult"
-      dataField="name"
-      className="result-list-container"
+      component-id="SearchResult"
+      data-field="name"
+      class-name="result-list-container"
       :pagination="true"
       :from="0"
       :size="5"
