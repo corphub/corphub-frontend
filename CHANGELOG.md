@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/corphub/corphub-frontend/compare/v1.5.0...v1.6.0) (2019-10-29)
+
+
+### Features
+
+* fix script ([feddb8f](https://github.com/corphub/corphub-frontend/commit/feddb8f59675c07b12ea6288d819ba5f65471268))
+
 # [1.5.0](https://github.com/corphub/corphub-frontend/compare/v1.4.0...v1.5.0) (2019-10-29)
 
 
