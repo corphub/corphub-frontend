@@ -1,3 +1,12 @@
+# [1.9.0](https://github.com/corphub/corphub-frontend/compare/v1.8.0...v1.9.0) (2019-10-29)
+
+
+### Features
+
+* fix semantic release ([02c7014](https://github.com/corphub/corphub-frontend/commit/02c7014085063a3a08ebfb2c9ba6eddf5d6eb0fd))
+* fix semantic release ([35ccae5](https://github.com/corphub/corphub-frontend/commit/35ccae56f74f23872c2bd9e1afa828a76c82b2aa))
+* introduce semantic release npm plugin ([7c41f59](https://github.com/corphub/corphub-frontend/commit/7c41f59079692b99445ebc4451d714321b27c4d3))
+
 # [1.8.0](https://github.com/corphub/corphub-frontend/compare/v1.7.0...v1.8.0) (2019-10-29)
 
 
