@@ -14,9 +14,9 @@ cache:
   - "$HOME/.yarn-cache"
 before_script:
 - nvm install lts/*
-- yarn add @semantic-release/git @semantic-release/changelog semantic-release@15
+- yarn add @semantic-release/git @semantic-release/npm @semantic-release/changelog semantic-release@15
 after_success:
-- npx semantic-release
+- npx semantic-release --npmPublish=false
 script: true
 before_deploy:
 - docker login -u "$REGISTRY_USER" -p "$REGISTRY_PASS"
