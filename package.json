@@ -21,6 +21,7 @@
     "@nuxtjs/axios": "^5.3.6",
     "@nuxtjs/dotenv": "^1.4.1",
     "@nuxtjs/pwa": "^2.6.0",
+    "@semantic-release/changelog": "^3.0.5",
     "@semantic-release/git": "^7.0.17",
     "cross-env": "^5.2.0",
     "nuxt": "^2.9.2",
