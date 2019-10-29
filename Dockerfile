@@ -24,5 +24,10 @@ ENV NUXT_HOST=0.0.0.0
 # set app port
 ENV NUXT_PORT=5000
 
+graphql_host=http://corphub-backend-service:8082
+elastic_search_host=http://elasticsearch-service:9200
+graphql_endpoint=http://corphub-backend-service:8082/graphql
+
+
 # start the app
 CMD [ "npm", "start" ]
