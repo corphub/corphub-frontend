@@ -1,3 +1,10 @@
+# [1.7.0](https://github.com/corphub/corphub-frontend/compare/v1.6.0...v1.7.0) (2019-10-29)
+
+
+### Features
+
+* fix script version detection ([e4f8c2d](https://github.com/corphub/corphub-frontend/commit/e4f8c2d793d9cc1e7c4a415966d1fd290c60be2e))
+
 # [1.6.0](https://github.com/corphub/corphub-frontend/compare/v1.5.0...v1.6.0) (2019-10-29)
 
 
