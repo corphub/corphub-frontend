@@ -1,3 +1,10 @@
+# [1.8.0](https://github.com/corphub/corphub-frontend/compare/v1.7.0...v1.8.0) (2019-10-29)
+
+
+### Features
+
+* fix Dockerfile ([8e4942b](https://github.com/corphub/corphub-frontend/commit/8e4942b23cec27eebeff59939dadae5c98f07b6f))
+
 # [1.7.0](https://github.com/corphub/corphub-frontend/compare/v1.6.0...v1.7.0) (2019-10-29)
 
 
