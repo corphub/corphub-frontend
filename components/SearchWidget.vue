@@ -1,7 +1,7 @@
 <template>
   <ReactiveBase
     app="com.topdesk.tophubbackend.data.entities.category,com.topdesk.tophubbackend.data.entities.entry"
-    url="{{ elastic_search_url }}"
+    url={{ elastic_search_url }}
   >
     <DataSearch
       component-id="SearchSensor"
