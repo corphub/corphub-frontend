@@ -6,12 +6,7 @@ if [[ "$BRANCH" == "master" ]]; then
     echo checking out ${latesttag}
     git checkout ${latesttag}
 fi
-full_version=$(cat package.json \
-  | grep version \
-  | head -1 \
-  | awk -F: '{ print $2 }' \
-  | sed 's/[",]//g'
-  | tr -d '[[:space:]]')
+full_version=$(cat package.json | jq .version | tr -d '"')
 echo found version: ${full_version}
 IFS='.' read -r -a versions <<< "$full_version"
 feature_version=${versions[0]}.${versions[1]}
