@@ -1,3 +1,10 @@
+# [1.10.0](https://github.com/corphub/corphub-frontend/compare/v1.9.0...v1.10.0) (2019-10-29)
+
+
+### Features
+
+* fix quotes ([b43be33](https://github.com/corphub/corphub-frontend/commit/b43be3374bc20492ffc8760b49ff2577a16c3c84))
+
 # [1.9.0](https://github.com/corphub/corphub-frontend/compare/v1.8.0...v1.9.0) (2019-10-29)
 
 
