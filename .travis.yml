@@ -21,3 +21,13 @@ script: true
 before_deploy:
 - docker login -u "$REGISTRY_USER" -p "$REGISTRY_PASS"
 deploy:
+  - provider: script
+    script: bash ./deploy.sh ${TRAVIS_BRANCH}
+    skip_cleanup: true
+    on:
+      branch: dev
+  - provider: script
+    script: bash ./deploy.sh ${TRAVIS_BRANCH}
+    skip_cleanup: true
+    on:
+      branch: master
