@@ -7,8 +7,8 @@ services:
 env:
   global:
   - REGISTRY_USER=pjotre86
-  - secure: HP1WQx7TfmmKexX4smXillcGdu+OPqSfM8Jd4DUYaGfl26/K32YA3gC9OeWNqhWr7OGu/3ZBCFvTJUPpN+bJRKmTOE0DbBK/pTAANbDG5nVHn70YnvoE4GA0tNJxn/aDtllQ98FA4Nz8jaDDJOFY4jSqVls4OCWAlF+sfCI6cC/oGKhtCVpc5V03g1Mg2ihEymBXslTYrszH82XAnXQYvJte5cUyjV75khoNHTxTAe0/tHBBo1YfWejb5fHvgAaVca7kVGEvygynTueYm3WPTnoJPTWTSMJs0fJtAEg0A9HKXoABxAGM0hqmv3F5hx7xCe/xh5bxv/Uhrbu4oHPsMU9pu2obl+NFIJ5NmGcfCN4v74y+YBj0eo/NFxFcmAXl3q83sp5N8b7tmjUNur+SkXHTNsTreOgpg75WSw70a9/OztBDbMiuiJam/mR57HZRDDpEOdbpTwD7JlUugWRXVFTMeK7yKn+uOx7505GGg/Hy43KCA62wn1U/6ZEO53FtCS5mp/aKo1gH32c5Rww80Lk8jbhQgz+KLoKneI9HqwqQswNeRJ1sCpW0Di/xgrNSRmSbHQYdrIjuFB0lV5P1GfAB9L+1Cn+JrtNCQhMUiQIVJ11zLIpYGU4jBuaANNl0tu2j8yIjsx/d3CX+igNFf9HNarkcChoIYI6XXHnZ7X0=
   - secure: hfWI8q1y8KdpEgNSSG1OoJgjnMU6kAOPaE0riEGmuUs7pEvsy7gVJSPX5ooa8weJAb2WTcdbPLtRFt09n37xj7MduaFikd2BHj52mBhdoG9d2+J0TI51L+6KrDHg4RlIKuD9vvbR+Xqv9FWDK5N94xB/TRIKajMCYVUGhw6WvAoH/2jHqMB3yiPB8TpXwuLep3BeUY/sCSAeRgifYNd401CN9/2jiGNPcOfXGdc+YLp9Zt7wvjxmpptG4xPeZeWh11nPP1pl3KE5q27wSYugSLgjQuYH2BkLWUa9/v21oCYhQek4HUjRnAE4JB9sWhqx73oawcjcsdV+/aul08f6CVbh5AnVYdTjWe/PjL0vynbDxOWo8z5YLR+DIWnfLiwyaXLNvUrOwl6De0mqHVCpGjlgqLF+apVXxxG/3dNm86aY2YxcsEoQcnE8GeLTvcDB7VlSmpcnn0n6JBW6MrI/HnseH0PSKQrngWJIe+zU0iZvXp8nms9+C0I+f6vt5v82KMWnvf/gPWFzWzgyYgzDOXUwIjsJ85GpH/vuWkhVOTmAHMblj2k7AypeFcBofZ9g/khi1xQ3XCtRYK8r1PK9CgnmY4++CT3TW5pwwkSzpUkoH6m0DT/ydV8bJ1Sqc4hBY19DrFwDlrbhojxUH6sRBfpWOG3yiEl412PntiiMgO0=
+  - secure: EMgQtwqrrmEFNJo3uBeTytU/thb+l0I5+4sDFzZi6G55kcvDvGy8nmi76Wy/75fvER8wsvb45ssfODwCgIztRCjfnwYG3MxDYrAphtwg/yShIIXqMSenpV9cUO4/5mfMGdgttnppXwnmdh8uEhdwDkHb1OKapTjkBmvIrgrBy7HmiWAbt0k+FaaqazUINtL+PRaGVw2J8YyNM5ZhNUF1fbjY87V8LB/0hreQUPloJOlK9Jt3Fa01X+jrpUhnf8LWFHUHqr1h10TXFSPGK622n87G9DqS57L+dV5HXtS1ckaRo6i/g5XceUb/O6b8kVNGeHCsw2d6C9SRKWHHmf2jdjnxPEoKtnlzySVfx6GMuOO+8qrRt0BJzHa4yoiHIH0ZUVGJbOb0mzU1E++e/zJ2oU4eVZFDhZ0DcXOAlyPxjJKiTA36w4Deebq1wpK2pu/FWp3HvawgLy2XGUKsE6hTyoEgDpuqE3ZhypEYMhMTNe1sodRZYGsTL24LGYcPvuPEp1E8wOJ9g0VFleJrx9xYYbJSIFpJFUHtzTHGBsUcwnSS6X1wMnxiNOijDwpyBNjqlPlCSTV3vVifimkdeu4Z1Tw9JvlMt6Wa7IIcwszGXor5kTrQ7Mn8iyND1fv4z5WvaaVN7+PsJLPoHFfV5dMOgaaZuMJZ7dgRpmTTyoo0JXU=
 cache:
   directories:
   - "$HOME/.yarn-cache"
@@ -21,13 +21,13 @@ script: true
 before_deploy:
 - docker login -u "$REGISTRY_USER" -p "$REGISTRY_PASS"
 deploy:
-  - provider: script
-    script: bash ./deploy.sh ${TRAVIS_BRANCH}
-    skip_cleanup: true
-    on:
-      branch: dev
-  - provider: script
-    script: bash ./deploy.sh ${TRAVIS_BRANCH}
-    skip_cleanup: true
-    on:
-      branch: master
+- provider: script
+  script: bash ./deploy.sh ${TRAVIS_BRANCH}
+  skip_cleanup: true
+  on:
+    branch: dev
+- provider: script
+  script: bash ./deploy.sh ${TRAVIS_BRANCH}
+  skip_cleanup: true
+  on:
+    branch: master
