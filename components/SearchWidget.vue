@@ -1,7 +1,7 @@
 <template>
   <ReactiveBase
     app="com.topdesk.tophubbackend.data.entities.category,com.topdesk.tophubbackend.data.entities.entry"
-    url="http://127.0.0.1:9200"
+    url="{{ elastic_search_url }}"
   >
     <DataSearch
       component-id="SearchSensor"
@@ -34,7 +34,8 @@ export default {
   components: {},
   data() {
     return {
-      chosen: ''
+      chosen: '',
+      elastic_search_url: process.env.elastic_search_host
     }
   },
   methods: {
