@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/corphub/corphub-frontend/compare/v1.2.0...v1.3.0) (2019-10-29)
+
+
+### Features
+
+* key for dockerhub ([6850eeb](https://github.com/corphub/corphub-frontend/commit/6850eeb5488ea80653f4948b5c17c1e5a6d22d32))
+
 # [1.2.0](https://github.com/corphub/corphub-frontend/compare/v1.1.0...v1.2.0) (2019-10-29)
 
 
