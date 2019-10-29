@@ -17,12 +17,12 @@ echo found major version: ${major_version}
 if [[ "$BRANCH" == "master" ]]; then
     echo building release version
     docker pull corphub/corphub-frontend:latest || true
-    docker build --cache-from corphub/corphub-frontend --build-arg POM_VERSION=${full_version} -t corphub/corphub-frontend:${full_version} -t corphub/corphub-frontend:${feature_version} -t corphub/corphub-frontend:${major_version} -t corphub/corphub-frontend:latest .
+    docker build --cache-from corphub/corphub-frontend -t corphub/corphub-frontend:${full_version} -t corphub/corphub-frontend:${feature_version} -t corphub/corphub-frontend:${major_version} -t corphub/corphub-frontend:latest .
     docker push corphub/corphub-frontend
 fi
 if [[ "$BRANCH" == "dev" ]]; then
     echo building snapshot version
     docker pull corphub/corphub-frontend:snapshot|| true
-    docker build --cache-from corphub/corphub-frontend --build-arg POM_VERSION=${full_version} -t corphub/corphub-frontend:snapshot .
+    docker build --cache-from corphub/corphub-frontend -t corphub/corphub-frontend:snapshot .
     docker push corphub/corphub-frontend
 fi
