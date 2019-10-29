@@ -14,7 +14,7 @@ cache:
   - "$HOME/.yarn-cache"
 before_script:
 - nvm install lts/*
-- npm install @semantic-release/git @semantic-release/changelog semantic-release@15
+- yarn add @semantic-release/git @semantic-release/changelog semantic-release@15
 after_success:
 - npx semantic-release
 script: true
