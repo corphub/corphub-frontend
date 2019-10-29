@@ -1,4 +1,6 @@
 language: node_js
+node_js:
+  - 10
 sudo: required
 services:
   - docker
@@ -8,13 +10,13 @@ env:
     # REGISTRY_PASS
     - secure: HP1WQx7TfmmKexX4smXillcGdu+OPqSfM8Jd4DUYaGfl26/K32YA3gC9OeWNqhWr7OGu/3ZBCFvTJUPpN+bJRKmTOE0DbBK/pTAANbDG5nVHn70YnvoE4GA0tNJxn/aDtllQ98FA4Nz8jaDDJOFY4jSqVls4OCWAlF+sfCI6cC/oGKhtCVpc5V03g1Mg2ihEymBXslTYrszH82XAnXQYvJte5cUyjV75khoNHTxTAe0/tHBBo1YfWejb5fHvgAaVca7kVGEvygynTueYm3WPTnoJPTWTSMJs0fJtAEg0A9HKXoABxAGM0hqmv3F5hx7xCe/xh5bxv/Uhrbu4oHPsMU9pu2obl+NFIJ5NmGcfCN4v74y+YBj0eo/NFxFcmAXl3q83sp5N8b7tmjUNur+SkXHTNsTreOgpg75WSw70a9/OztBDbMiuiJam/mR57HZRDDpEOdbpTwD7JlUugWRXVFTMeK7yKn+uOx7505GGg/Hy43KCA62wn1U/6ZEO53FtCS5mp/aKo1gH32c5Rww80Lk8jbhQgz+KLoKneI9HqwqQswNeRJ1sCpW0Di/xgrNSRmSbHQYdrIjuFB0lV5P1GfAB9L+1Cn+JrtNCQhMUiQIVJ11zLIpYGU4jBuaANNl0tu2j8yIjsx/d3CX+igNFf9HNarkcChoIYI6XXHnZ7X0=
     # GH_TOKEN
-    - secure: Lj6h/MVWD1GQwZgdterNiUjpF8wyQPkJ++96j1/RcDEnlfotY4RKPE/KeKY+nl5bHwEiCWIoWoqiMedR8sIaVU45xWZF9qmF1lWePoX7aN7zKeyLlKaIxKbKOxOBMRxwAYIxQepTJuDsb9+eZ8Ve2iQNoMkGEeN+0emihWS0tFvzoGlIioxE8Iy9KYI89FuM4G8e+DlZtHOuw3fKHmLrBIIkPCz4p/7Q0CIaXquV79QLr84SeWebBeNjCY+1gsz2RTNrdPYBJGo+VpCjrL6rLn7XVjl1WxcHSFKYPa2GP2TdlCby0C8yuYBRLfoFmdAxDdXQAUSexQoN+27YA9BUcmOfh1nfvBMf5eNUkSDjbZyoljUcTATgWhN5AdR1ibE5e4FifYAvpbKdvjeL7/AzTX0nlRMgaf8OuBMLn2l3/9QyUiDSquSs4FZPh0/pJIvUuOm3AnLko+GCU8lG/0fpkCLDqXxFC2hTaat2OfqYI4cvNetPZ2tGD/B4dAaKsKnr8+UfR6Et9PraDtfFOpbeifncDmIqUImn90T8NuFzf9JI8PByjtQ7yWNz/zN0yze+9vRWkm1m/sFfg+hl3y4cDhIeksxG2iSgc8/YCBx4we5CyUx3UE8z0aIyC//1cgktke74xwm7E1lc0ER8WUtxTq18CQ2bjqeefhF71jb257A=
+    - secure: "Lj6h/MVWD1GQwZgdterNiUjpF8wyQPkJ++96j1/RcDEnlfotY4RKPE/KeKY+nl5bHwEiCWIoWoqiMedR8sIaVU45xWZF9qmF1lWePoX7aN7zKeyLlKaIxKbKOxOBMRxwAYIxQepTJuDsb9+eZ8Ve2iQNoMkGEeN+0emihWS0tFvzoGlIioxE8Iy9KYI89FuM4G8e+DlZtHOuw3fKHmLrBIIkPCz4p/7Q0CIaXquV79QLr84SeWebBeNjCY+1gsz2RTNrdPYBJGo+VpCjrL6rLn7XVjl1WxcHSFKYPa2GP2TdlCby0C8yuYBRLfoFmdAxDdXQAUSexQoN+27YA9BUcmOfh1nfvBMf5eNUkSDjbZyoljUcTATgWhN5AdR1ibE5e4FifYAvpbKdvjeL7/AzTX0nlRMgaf8OuBMLn2l3/9QyUiDSquSs4FZPh0/pJIvUuOm3AnLko+GCU8lG/0fpkCLDqXxFC2hTaat2OfqYI4cvNetPZ2tGD/B4dAaKsKnr8+UfR6Et9PraDtfFOpbeifncDmIqUImn90T8NuFzf9JI8PByjtQ7yWNz/zN0yze+9vRWkm1m/sFfg+hl3y4cDhIeksxG2iSgc8/YCBx4we5CyUx3UE8z0aIyC//1cgktke74xwm7E1lc0ER8WUtxTq18CQ2bjqeefhF71jb257A="
 cache:
   directories:
     - $HOME/.yarn-cache
 before_script:
   - nvm install lts/*
-  - yarn add @semantic-release/git semantic-release@15
+  - npm install @semantic-release/git semantic-release@15
 after_success:
   - npx semantic-release
 script: true
