@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/corphub/corphub-frontend/compare/v1.4.0...v1.5.0) (2019-10-29)
+
+
+### Features
+
+* fix script name ([1386c2a](https://github.com/corphub/corphub-frontend/commit/1386c2ac85d74df72e5a957a28014a99aa677e69))
+
 # [1.4.0](https://github.com/corphub/corphub-frontend/compare/v1.3.0...v1.4.0) (2019-10-29)
 
 
