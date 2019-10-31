@@ -25,7 +25,7 @@ ENV NUXT_HOST=0.0.0.0
 ENV NUXT_PORT=5000
 
 ENV graphql_host=http://corphub-backend-service:8082
-ENV elastic_search_host=http://10.98.30.65:9200
+ENV elastic_search_host=http://10.106.32.106:9200
 ENV graphql_endpoint=http://corphub-backend-service:8082/graphql
 
 
