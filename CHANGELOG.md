@@ -1,3 +1,10 @@
+# [1.12.0](https://github.com/corphub/corphub-frontend/compare/v1.11.0...v1.12.0) (2019-10-31)
+
+
+### Features
+
+* fix variable again ([005cbab](https://github.com/corphub/corphub-frontend/commit/005cbab225cda768a5cddcf6bb0fa824fef00928))
+
 # [1.11.0](https://github.com/corphub/corphub-frontend/compare/v1.10.0...v1.11.0) (2019-10-31)
 
 
