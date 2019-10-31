@@ -1,3 +1,10 @@
+# [1.13.0](https://github.com/corphub/corphub-frontend/compare/v1.12.0...v1.13.0) (2019-10-31)
+
+
+### Features
+
+* use es ip ([18d2fc3](https://github.com/corphub/corphub-frontend/commit/18d2fc3c12e23ed375a9c66c80f9e4218a8330ca))
+
 # [1.12.0](https://github.com/corphub/corphub-frontend/compare/v1.11.0...v1.12.0) (2019-10-31)
 
 
