@@ -1,3 +1,10 @@
+# [1.15.0](https://github.com/corphub/corphub-frontend/compare/v1.14.0...v1.15.0) (2019-11-13)
+
+
+### Features
+
+* elasticsearch url. package-lock.json. gitignore ([f6e5617](https://github.com/corphub/corphub-frontend/commit/f6e5617433bc0619db513c87301df66bd3081824))
+
 # [1.14.0](https://github.com/corphub/corphub-frontend/compare/v1.13.0...v1.14.0) (2019-10-31)
 
 
