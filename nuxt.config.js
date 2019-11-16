@@ -26,11 +26,6 @@ export default {
     ]
   },
 
-  //Handle prefix added by kong-ingress in deployment
-  router: {
-    base: '/ui/'
-  },
-
   /*
    ** Customize the progress-bar color
    */
@@ -70,7 +65,9 @@ export default {
   /*
    ** Build configuration
    */
+  buildDir: '_nuxt',
   build: {
+    publicPath: 'ui/_nuxt/',
     transpile: ['vuetify/lib'],
     plugins: [new VuetifyLoaderPlugin()],
     loaders: {
