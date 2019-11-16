@@ -1,3 +1,10 @@
+# [1.22.0](https://github.com/corphub/corphub-frontend/compare/v1.21.0...v1.22.0) (2019-11-16)
+
+
+### Features
+
+* add router again ([f55f247](https://github.com/corphub/corphub-frontend/commit/f55f2475d1becad980c61697f39443dd5e29e973))
+
 # [1.21.0](https://github.com/corphub/corphub-frontend/compare/v1.20.0...v1.21.0) (2019-11-16)
 
 
