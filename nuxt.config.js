@@ -26,6 +26,10 @@ export default {
     ]
   },
 
+  router: {
+    base: '/ui/'
+  },
+
   /*
    ** Customize the progress-bar color
    */
