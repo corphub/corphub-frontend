@@ -1,3 +1,10 @@
+# [1.18.0](https://github.com/corphub/corphub-frontend/compare/v1.17.0...v1.18.0) (2019-11-16)
+
+
+### Features
+
+* Add router base path again ([3b88c6b](https://github.com/corphub/corphub-frontend/commit/3b88c6b13b5214df58db7d7badf0bf7231094175))
+
 # [1.17.0](https://github.com/corphub/corphub-frontend/compare/v1.16.0...v1.17.0) (2019-11-16)
 
 
