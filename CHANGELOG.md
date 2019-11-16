@@ -1,3 +1,10 @@
+# [1.23.0](https://github.com/corphub/corphub-frontend/compare/v1.22.0...v1.23.0) (2019-11-16)
+
+
+### Features
+
+* no router again ([7c76209](https://github.com/corphub/corphub-frontend/commit/7c76209060cbe29c681f180e648fca7b5b554fae))
+
 # [1.22.0](https://github.com/corphub/corphub-frontend/compare/v1.21.0...v1.22.0) (2019-11-16)
 
 
