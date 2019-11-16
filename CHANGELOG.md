@@ -1,3 +1,10 @@
+# [1.19.0](https://github.com/corphub/corphub-frontend/compare/v1.18.0...v1.19.0) (2019-11-16)
+
+
+### Features
+
+* Add public path ([7a14cad](https://github.com/corphub/corphub-frontend/commit/7a14cada4c57199561edbf60c004a08ecc2b1a1a))
+
 # [1.18.0](https://github.com/corphub/corphub-frontend/compare/v1.17.0...v1.18.0) (2019-11-16)
 
 
