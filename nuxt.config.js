@@ -77,8 +77,7 @@ export default {
         config.output.publicPath = './_nuxt/'
       }
       return config;
-    }
-  },
+    },
     /*
      ** You can extend webpack config here
      */
