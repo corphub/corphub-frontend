@@ -27,9 +27,9 @@ export default {
   },
 
 
-  //router: {
-  //  base: '/ui/'
-  //},
+  router: {
+    base: '/ui/'
+  },
 
   /*
    ** Customize the progress-bar color
@@ -70,14 +70,16 @@ export default {
   /*
    ** Build configuration
    */
-  build: {
-    extend (config, { isDev, isClient }) {
-      if (!isDev) {
-        // relative links, please.
-        config.output.publicPath = './_nuxt/'
+  build: {  
+    publicPath: './_nuxt/',
+    transpile: ['vuetify/lib'],
+    plugins: [new VuetifyLoaderPlugin()],
+    loaders: {
+      stylus: {
+        import: ['~assets/style/variables.styl']
       }
-      return config;
     },
+
     /*
      ** You can extend webpack config here
      */
@@ -90,6 +92,10 @@ export default {
           loader: 'eslint-loader',
           exclude: /(node_modules)/
         })
+      }
+      if (!ctx.isDev) {
+        // relative links, please.
+        config.output.publicPath = './_nuxt/'
       }
     }
   },
