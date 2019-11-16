@@ -26,6 +26,7 @@ export default {
     ]
   },
 
+  //Handle prefix added by kong-ingress in deployment
   router: {
     base: '/ui/'
   },
