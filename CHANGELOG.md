@@ -1,3 +1,10 @@
+# [1.24.0](https://github.com/corphub/corphub-frontend/compare/v1.23.0...v1.24.0) (2019-11-16)
+
+
+### Features
+
+* fix config ([85d370c](https://github.com/corphub/corphub-frontend/commit/85d370c4302971ee4620ee7fd6069cce9b978999))
+
 # [1.23.0](https://github.com/corphub/corphub-frontend/compare/v1.22.0...v1.23.0) (2019-11-16)
 
 
