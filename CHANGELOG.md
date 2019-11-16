@@ -1,3 +1,10 @@
+# [1.17.0](https://github.com/corphub/corphub-frontend/compare/v1.16.0...v1.17.0) (2019-11-16)
+
+
+### Features
+
+* Change path config ([bba1425](https://github.com/corphub/corphub-frontend/commit/bba14252c28e18611951406e8ee92eb93dc7e708))
+
 # [1.16.0](https://github.com/corphub/corphub-frontend/compare/v1.15.0...v1.16.0) (2019-11-16)
 
 
