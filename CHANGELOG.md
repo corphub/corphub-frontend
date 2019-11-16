@@ -1,3 +1,10 @@
+# [1.20.0](https://github.com/corphub/corphub-frontend/compare/v1.19.0...v1.20.0) (2019-11-16)
+
+
+### Features
+
+* fix public path ([5e5cd50](https://github.com/corphub/corphub-frontend/commit/5e5cd50f45c1405de86e3f51bcc7dee5c496a0c2))
+
 # [1.19.0](https://github.com/corphub/corphub-frontend/compare/v1.18.0...v1.19.0) (2019-11-16)
 
 
