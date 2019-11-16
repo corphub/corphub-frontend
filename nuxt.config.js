@@ -71,6 +71,7 @@ export default {
    ** Build configuration
    */
   build: {  
+    publicPath = '_nuxt/',
     transpile: ['vuetify/lib'],
     plugins: [new VuetifyLoaderPlugin()],
     loaders: {
