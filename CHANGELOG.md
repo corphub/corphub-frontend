@@ -1,3 +1,10 @@
+# [1.16.0](https://github.com/corphub/corphub-frontend/compare/v1.15.0...v1.16.0) (2019-11-16)
+
+
+### Features
+
+* Add comment ([2d5d59d](https://github.com/corphub/corphub-frontend/commit/2d5d59df66d5738bb0d5a1d76fa37804b2f382b4))
+
 # [1.15.0](https://github.com/corphub/corphub-frontend/compare/v1.14.0...v1.15.0) (2019-11-13)
 
 
