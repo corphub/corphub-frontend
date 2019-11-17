@@ -65,7 +65,7 @@ export default {
 
   router: {
     base: '/ui/'
-  }
+  },
 
   /*
    ** Build configuration
