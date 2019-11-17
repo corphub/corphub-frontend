@@ -1,3 +1,10 @@
+# [1.28.0](https://github.com/corphub/corphub-frontend/compare/v1.27.0...v1.28.0) (2019-11-17)
+
+
+### Features
+
+* add router base ([6ab1b40](https://github.com/corphub/corphub-frontend/commit/6ab1b407830d816909839c3e8a3941a09abe3a38))
+
 # [1.27.0](https://github.com/corphub/corphub-frontend/compare/v1.26.0...v1.27.0) (2019-11-17)
 
 
