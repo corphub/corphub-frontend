@@ -1,3 +1,10 @@
+# [1.26.0](https://github.com/corphub/corphub-frontend/compare/v1.25.0...v1.26.0) (2019-11-17)
+
+
+### Features
+
+* try full url as base path ([8cf0315](https://github.com/corphub/corphub-frontend/commit/8cf0315afc363074b6fedfc106f826e19517ce86))
+
 # [1.25.0](https://github.com/corphub/corphub-frontend/compare/v1.24.0...v1.25.0) (2019-11-16)
 
 
