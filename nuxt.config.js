@@ -62,11 +62,6 @@ export default {
     // See https://github.com/nuxt-community/axios-module#options
   },
 
-
-  router: {
-    base: '/ui/'
-  },
-
   /*
    ** Build configuration
    */
@@ -91,10 +86,6 @@ export default {
           loader: 'eslint-loader',
           exclude: /(node_modules)/
         })
-      }
-      if (!ctx.isDev) {
-        // relative links, please.
-        config.output.publicPath = 'http://192.168.178.246:30390/ui/_nuxt/'
       }
     }
   },
