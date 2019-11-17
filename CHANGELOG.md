@@ -1,3 +1,10 @@
+# [1.29.0](https://github.com/corphub/corphub-frontend/compare/v1.28.0...v1.29.0) (2019-11-17)
+
+
+### Features
+
+* forgot comma ([412fec2](https://github.com/corphub/corphub-frontend/commit/412fec21b9d40deef5833102cc2c3fe283160a1e))
+
 # [1.28.0](https://github.com/corphub/corphub-frontend/compare/v1.27.0...v1.28.0) (2019-11-17)
 
 
