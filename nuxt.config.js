@@ -62,6 +62,11 @@ export default {
     // See https://github.com/nuxt-community/axios-module#options
   },
 
+
+  router: {
+    base: '/ui/'
+  }
+
   /*
    ** Build configuration
    */
