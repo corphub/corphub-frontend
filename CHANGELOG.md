@@ -1,3 +1,10 @@
+# [1.27.0](https://github.com/corphub/corphub-frontend/compare/v1.26.0...v1.27.0) (2019-11-17)
+
+
+### Features
+
+* fix path. cleanup ([bb277a6](https://github.com/corphub/corphub-frontend/commit/bb277a60a710092173519381ee74601d2c178463))
+
 # [1.26.0](https://github.com/corphub/corphub-frontend/compare/v1.25.0...v1.26.0) (2019-11-17)
 
 
