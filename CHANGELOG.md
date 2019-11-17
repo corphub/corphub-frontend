@@ -1,3 +1,10 @@
+# [1.30.0](https://github.com/corphub/corphub-frontend/compare/v1.29.0...v1.30.0) (2019-11-17)
+
+
+### Features
+
+* remove aLL the weird routing configuration ([e195421](https://github.com/corphub/corphub-frontend/commit/e1954219c9bf66b73f75db799a222e70553346f0))
+
 # [1.29.0](https://github.com/corphub/corphub-frontend/compare/v1.28.0...v1.29.0) (2019-11-17)
 
 
