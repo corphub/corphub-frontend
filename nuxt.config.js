@@ -27,9 +27,9 @@ export default {
   },
 
 
-  router: {
-    base: '/ui/'
-  },
+  //router: {
+  //  base: '/ui/'
+  //},
 
   /*
    ** Customize the progress-bar color
@@ -71,7 +71,7 @@ export default {
    ** Build configuration
    */
   build: {  
-    publicPath: './_nuxt/',
+    //publicPath: './_nuxt/',
     transpile: ['vuetify/lib'],
     plugins: [new VuetifyLoaderPlugin()],
     loaders: {
@@ -95,7 +95,7 @@ export default {
       }
       if (!ctx.isDev) {
         // relative links, please.
-        config.output.publicPath = './_nuxt/'
+        config.output.publicPath = 'http://192.168.178.246:30390/ui/'
       }
     }
   },
