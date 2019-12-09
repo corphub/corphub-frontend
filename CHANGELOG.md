@@ -1,3 +1,10 @@
+# [1.31.0](https://github.com/corphub/corphub-frontend/compare/v1.30.0...v1.31.0) (2019-12-09)
+
+
+### Features
+
+* switch ES to kong proxy ([8d0cf7b](https://github.com/corphub/corphub-frontend/commit/8d0cf7b991f87a23fa88b26331490fa273c052ee))
+
 # [1.30.0](https://github.com/corphub/corphub-frontend/compare/v1.29.0...v1.30.0) (2019-11-17)
 
 
