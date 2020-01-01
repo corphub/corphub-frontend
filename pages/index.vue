@@ -3,7 +3,7 @@
     <v-container class="pa-0 ma-0">
       <v-card fluid>
         <v-card-title fluid>
-          Welcome to TOPhub
+          Welcome to corphub?!!test
         </v-card-title>
         <v-card-text fluid>
           <search-widget></search-widget>

@@ -51,6 +51,7 @@ export default {
     '@nuxtjs/pwa',
     '@nuxtjs/apollo',
     '@nuxtjs/dotenv'
+    /*@nuxtjs/auth'*/
   ],
   /*
    ** Axios module configuration
@@ -106,5 +107,30 @@ export default {
         httpEndpoint: process.env.graphql_endpoint
       }
     }
-  }
+  },
+
+  //router: {
+  //  middleware: ['auth']
+  //},
+  
+ // auth: {
+ //   strategies: {
+ //     keycloak: {
+ //       _scheme: 'oauth2',
+ //       authorization_endpoint: 'http://10.111.236.19:8080/auth/realms/master/protocol/openid-connect/auth',
+ //       userinfo_endpoint: false,
+ //       //access_type: 'offline',
+ //       access_token_endpoint: 'http://10.111.236.19:8080/auth/realms/master/protocol/openid-connect/token',
+ //       response_type: 'code',
+ //       //token_type: 'Bearer',
+ //       //token_key: 'access_token',
+ //       client_id: 'corphub'
+ //     },
+ //   },
+ //   redirect: {
+ //     login: '/login',
+ //     callback: '/callback',
+ //     home: '/'
+ //   },
+ // }
 }

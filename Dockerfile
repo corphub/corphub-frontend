@@ -1,20 +1,24 @@
-FROM node:11.13.0-alpine
+FROM node:13.5-alpine
 
 # create destination directory
 RUN mkdir -p /usr/src/nuxt-app
 WORKDIR /usr/src/nuxt-app
 
 # update and install dependency
-RUN apk update && apk upgrade
-RUN apk add git
+#RUN apk update && apk upgrade
+#RUN apk add git
 
 # copy the app, note .dockerignore
-COPY . /usr/src/nuxt-app/
+COPY package.json /usr/src/nuxt-app/
+
 RUN npm install
+
+COPY . /usr/src/nuxt-app/
 
 # build necessary, even if no static files are needed,
 # since it builds the server as well
-RUN npm run build
+#RUN npm run build
+#RUN npm run dev &
 
 # expose 5000 on container
 EXPOSE 5000
@@ -30,4 +34,4 @@ ENV graphql_endpoint=http://corphub-backend-service:8082/graphql
 
 
 # start the app
-CMD [ "npm", "start" ]
+CMD [ "npm", "run", "dev" ]
