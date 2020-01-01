@@ -1,0 +1,13 @@
+apiVersion: skaffold/v2alpha1
+kind: Config
+build:
+  local:
+    push: false
+  artifacts:
+  - image: corphub/corphub-frontend
+    sync:
+      manual:
+      # Sync all the javascript files that are in the src folder
+      # with the container src folder
+      - src: "**"
+        dest: /usr/src/nuxt-app/
