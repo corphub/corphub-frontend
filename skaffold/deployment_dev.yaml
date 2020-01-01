@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: corphub-frontend-deployment-dev
+  labels:
+    app: corphub-frontend-app-dev
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: corphub-frontend-app-dev
+  template:
+    metadata:
+      labels:
+        app: corphub-frontend-app-dev
+    spec:
+      containers:
+        - name: corphub-frontend-app-dev
+          image: corphub/corphub-frontend-dev
+          ports:
+            - containerPort: 5000
+          imagePullPolicy: Never
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: corphub-frontend-service-dev
+spec:
+  selector:
+    app: corphub-frontend-app-dev
+  ports:
+    - port: 5000
+      targetPort: 5000
+      nodePort: 31011
+  type: LoadBalancer

@@ -4,10 +4,28 @@ build:
   local:
     push: false
   artifacts:
-  - image: corphub/corphub-frontend
+  - image: corphub/corphub-frontend-dev
+    docker:
+      dockerfile: skaffold/Dockerfile_dev
     sync:
       manual:
       # Sync all the javascript files that are in the src folder
       # with the container src folder
       - src: "**"
         dest: /usr/src/nuxt-app/
+deploy:
+    kubectl:
+      manifests:
+      - skaffold/deployment_dev.yaml
+profiles:
+  - name: production
+    patches:
+      - op: replace
+        path: /build/artifacts/0/image
+        value: corphub/corphub-frontend
+      - op: replace
+        path: /build/artifacts/0/docker/dockerfile
+        value: skaffold/Dockerfile
+      - op: replace
+        path: /deploy/kubectl/manifests/0
+        value: skaffold/deployment.yaml
