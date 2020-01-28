@@ -1,4 +1,4 @@
-import VuetifyLoaderPlugin from 'vuetify-loader/lib/plugin'
+//import VuetifyLoaderPlugin from 'vuetify-loader/lib/plugin'
 import pkg from './package'
 import './plugins/dotenv-profile.js'
 require('dotenv').config()
@@ -34,12 +34,20 @@ export default {
   /*
    ** Global CSS
    */
-  css: ['~/assets/style/app.styl'],
+  //css: ['~/assets/style/app.styl'],
 
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: ['@/plugins/vuetify', '@/plugins/reactivesearch-vue'],
+  plugins: ['@/plugins/reactivesearch-vue'],
+
+  buildModules: [
+    '@nuxtjs/vuetify'
+  ],
+
+  vuetify: {
+    /* module options */
+  },
 
   /*
    ** Nuxt.js modules
@@ -67,13 +75,13 @@ export default {
    ** Build configuration
    */
   build: {  
-    transpile: ['vuetify/lib'],
-    plugins: [new VuetifyLoaderPlugin()],
-    loaders: {
-      stylus: {
-        import: ['~assets/style/variables.styl']
-      }
-    },
+    //transpile: ['vuetify/lib'],
+    //plugins: [new VuetifyLoaderPlugin()],
+    //loaders: {
+    //  stylus: {
+    //    import: ['~assets/style/variables.styl']
+    //  }
+    //},
 
     /*
      ** You can extend webpack config here
