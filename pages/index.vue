@@ -46,8 +46,10 @@ export default {
       query: getAllCategories
     }
   },
-  head: {
-    title: 'Cars with Apollo'
+  head() {
+    return {
+      title: 'corpHub'
+    }
   }
 }
 </script>

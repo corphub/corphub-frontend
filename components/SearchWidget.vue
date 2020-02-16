@@ -1,28 +1,28 @@
 <template>
   <ReactiveBase
-    app="com.topdesk.tophubbackend.data.entities.category,com.topdesk.tophubbackend.data.entities.entry"
     :url="'' + elastic_search_url + ''"
+    app="com.topdesk.tophubbackend.data.entities.category,com.topdesk.tophubbackend.data.entities.entry"
   >
     <DataSearch
-      component-id="SearchSensor"
-      icon-position="right"
       :data-field="['name', 'title', 'target']"
-      class-name="data-search"
       :show-clear="false"
-      placeholder="Try me"
       :render-suggestion="renderSuggestion"
       @valueSelected="logit"
+      component-id="SearchSensor"
+      icon-position="right"
+      class-name="data-search"
+      placeholder="Try me"
     />
     <ReactiveList
+      :pagination="true"
+      :from="0"
+      :react="{ and: ['SearchSensor'] }"
+      :size="5"
       component-id="SearchResult"
       data-field="name"
       class-name="result-list-container"
-      :pagination="true"
-      :from="0"
-      :size="5"
-      :react="{ and: ['SearchSensor'] }"
     >
-      <div slot="renderData" slot-scope="{ item }">
+      <div slot="renderItem" slot-scope="{ item }">
         {{ item }}
       </div>
     </ReactiveList>
