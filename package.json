@@ -28,7 +28,7 @@
     "core-js": "2.6.9",
     "cross-env": "^5.2.0",
     "nuxt": "^2.11.0",
-    "semantic-release": "15",
+    "semantic-release": "17",
     "vue": "^2.6.11",
     "vue-simple-suggest": "^1.9.5",
     "vuetify": "^1.5.21",
